@@ -47,6 +47,33 @@ video {
 	color: white;
 	font-size: 14px; 
 }
+
+/*INSERIRE NOTIFICA SU SEGUITI*/
+	/*chiamata classe "seguiti" per ricordarmi in span 
+	ora richiamo per mettere il pallino sopra la scritta */
+.seguiti {
+	position: relative;
+
+}
+.seguiti::after {
+  content: "";
+  position: absolute;
+  top: -4px;               /* leggermente sopra il testo */
+  right: -6px;             /* un po' spostato a destra */
+  width: 6px;
+  height: 6px;
+  background-color: red;
+  border-radius: 50%;   /*struttura per mettere il pallino*/
+}
+
+
+
+
+
+
+
+
+
 /* Footer */
 
 footer {
