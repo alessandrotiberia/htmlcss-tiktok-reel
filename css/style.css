@@ -169,6 +169,12 @@ footer {
     justify-content: center;
 
     border: 1px solid #000;          /* bordino per staccarlo dalla foto */
+}/* immagine del profilo nella sidebar */
+.fotoprofilo img {
+    width: 40px;         /* larghezza fissa */
+    height: 40px;        /* altezza fissa */
+    border-radius: 50%;  /* la rende rotonda */
+    object-fit: cover;   /* riempie il cerchio senza deformarsi */
 }
 
 
