@@ -32,10 +32,21 @@ video {
 	left: 0;
 	right: 0;
 
+	/*inseriamo la parte del nostro esercizio
+	faccio diventare contenitore flex (?)
+	mettendo 3 blocchi in "linea" (stessa riga)*/
+	display: flex;
+	padding: 12px 16px; /*aggiungo spazio sopra sotto e lati*/
+
 	/* Inserisci qui sotto 
 	le tue regole, se necessario. */
 }
-
+.div-centro { /*qui sempre diventa flex dentro il primo metto in riga i span di prima*/
+	display: flex;
+	gap: 12px; /*metto spazio fisso tra le parole (?)*/
+	color: white;
+	font-size: 14px; 
+}
 /* Footer */
 
 footer {
