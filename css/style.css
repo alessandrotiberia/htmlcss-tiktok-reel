@@ -110,9 +110,24 @@ footer {
 	right: 0;
 	bottom: 0;
 	color: #fff;
+	 display: flex;                 /* metto le voci in riga */
+    justify-content: space-around; /* le distribuisco nello spazio */
+    align-items: center;           /* centrate verticalmente */
+    background-color: #000;        /* barra nera */
+    padding: 10px 8px;             /* un po' di altezza */
 
 	/* Inserisci qui sotto 
 	le tue regole, se necessario. */
+}
+.footer-menu > div {
+    display: flex;
+    flex-direction: column;   /* icona sopra, testo sotto */
+    align-items: center;
+    font-size: 10px;          /* testo piccolo */
+}
+
+.footer-menu i {
+    font-size: 20px;          /* grandezza icone */
 }
 
 /* Sidebar */
@@ -170,6 +185,8 @@ footer {
 
     border: 1px solid #000;          /* bordino per staccarlo dalla foto */
 }/* immagine del profilo nella sidebar */
+
+/*senza questo si vedeva gigante*/
 .fotoprofilo img {
     width: 40px;         /* larghezza fissa */
     height: 40px;        /* altezza fissa */
