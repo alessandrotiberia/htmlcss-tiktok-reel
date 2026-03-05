@@ -91,7 +91,7 @@ video {
 	width: 60%;
 	/* più stretto del testo */
 	height: 2px;
-	background-color: #fff;
+	background-color: white;
 	transform: translateX(-50%);
 	/* centra la lineetta */
 	border-radius: 999px;
@@ -122,9 +122,55 @@ footer {
 	right: 0;
 	top: 40%;
 
+	/*mettiamo in colonna e centriamo
+	 gap per dare spazio verticale*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+	color: white;
 	/* Inserisci qui sotto 
 	le tue regole, se necessario. */
 }
+
+
+.sidebar > div { /*per mettere icona sopra e numero sotto*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.sidebar i {
+    font-size: 24px;
+}
+
+/* contenitore foto profilo */
+.wrapper-foto {
+    position: relative;              /* div di riferimento per il + */
+}
+
+/* cerchietto con il + sotto la foto */
+.piu-profilo {
+    position: absolute;
+    bottom: -4px;                    /* scende un po' sotto l'immagine */
+    left: 50%;
+    transform: translateX(-50%);     /* lo centro orizzontalmente */
+
+    width: 8px;
+    height: 8px;
+    background-color: #ff0050;       /* colore stile TikTok */
+    color: #fff;
+    border-radius: 50%;
+    font-size: 8px;
+
+    display: flex;                   /* centro il + dentro il cerchio */
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #000;          /* bordino per staccarlo dalla foto */
+}
+
 
 /* ---------------------
 Regole per evidenziare i blocchi 
